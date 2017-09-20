@@ -27,11 +27,26 @@ namespace TestContacts
             Form fm1 = new Form1();
             fm1.Visible = true;
             this.Visible = false;
+            this.Dispose();
         }
 
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter) MessageBox.Show(textBox1.Text.Trim());
+        }
+
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Dispose();
+            GC.Collect();
+            Application.Exit();
+        }
+
+        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Dispose();
+            GC.Collect();
+            Application.Exit();
         }
     }
 }

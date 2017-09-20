@@ -15,3 +15,4 @@ C:\Users\taa5061\Desktop\TestContacts - 冠名\TestContacts\obj\Debug\TestContac
 C:\Users\taa5061\Desktop\TestContacts - 冠名\TestContacts\obj\Debug\TestContacts.Form2.resources
 C:\Users\taa5061\Desktop\TestContacts - 冠名\TestContacts\obj\Debug\TestContacts.Properties.Resources.resources
 C:\Users\taa5061\Desktop\TestContacts - 冠名\TestContacts\obj\Debug\TestContacts.csproj.GenerateResource.Cache
+C:\Users\taa5061\Desktop\TestContacts\TestContacts\obj\Debug\TestContacts.Form2.resources

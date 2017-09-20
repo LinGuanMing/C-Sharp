@@ -98,5 +98,19 @@ namespace TestContacts
             fm2.Visible = true;
             this.Visible = false;
         }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Dispose();
+            GC.Collect();
+            Application.Exit();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Dispose();
+            GC.Collect();
+            Application.Exit();
+        }
     }
 }
