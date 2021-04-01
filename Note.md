@@ -1,13 +1,25 @@
-# C# 開發筆記
+---
+tags: C#
+disqus: hackmd
+---
+
+C# 開發筆記
+===
+
+[![hackmd-github-sync-badge](https://hackmd.io/CyYANBG0Q7ahdUIBhSbJpA/badge)](https://hackmd.io/CyYANBG0Q7ahdUIBhSbJpA)
+
 
 
 > 鍵盤事件處理
 > 時間處理
 
+---
 
-## 鍵盤事件處理
+鍵盤事件處理
+===
 
-### ENTER自動找到下一個焦點
+ENTER自動找到下一個焦點
+---
 ```csharp=
 private void Form1_KeyDown(object sender, KeyEventArgs e)
 {
@@ -23,9 +35,8 @@ private void Form1_KeyDown(object sender, KeyEventArgs e)
 }
 ```
 
+限制輸入數字+英文並轉大寫
 ---
-
-### 限制輸入數字+英文並轉大寫
 ```csharp=
 private void txt_KeyPress(object sender, KeyPressEventArgs e)
 {
@@ -44,9 +55,8 @@ private void txt_KeyPress(object sender, KeyPressEventArgs e)
 }
 ```
 
+限制輸入數字事件
 ---
-
-### 限制輸入數字事件
 ```csharp=
 private void txt_KeyPress(object sender, KeyPressEventArgs e)
 {
@@ -58,9 +68,8 @@ private void txt_KeyPress(object sender, KeyPressEventArgs e)
 }
 ```
 
+覆寫按鍵Enter轉Tab
 ---
-
-### 覆寫按鍵Enter轉Tab
 ```csharp=
 /// <summary>覆寫[ProcessCmdKey]之事件</summary>
 /// <param name="msg"></param>
@@ -79,9 +88,11 @@ protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
 
 ---
 
-## 時間處理
+時間處理
+===
 
-### 日期加天數
+日期加天數
+---
 ```csharp=
 string DATE = "1061010";
 
@@ -91,7 +102,8 @@ DateTime NewDate = DateTime.ParseExact(new_date, "yyyyMMdd", culture);
 string DATE_ADD90 = Convert.ToString(Convert.ToInt32(NewDate.AddDays(89).ToString("yyyyMMdd")) - 19110000);
 ```
 
-### 時間擴充
+時間擴充
+---
 ```csharp=
 public static class DateTimeEx
 {
