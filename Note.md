@@ -3,7 +3,7 @@ tags: C#
 disqus: hackmd
 ---
 
-C# 開發筆記
+C# 程式筆記
 ===
 
 [![hackmd-github-sync-badge](https://hackmd.io/CyYANBG0Q7ahdUIBhSbJpA/badge)](https://hackmd.io/CyYANBG0Q7ahdUIBhSbJpA)
